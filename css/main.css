@@ -1,9 +1,8 @@
+img{
+	max-width: 100%;
+}
 body{
-	background: url(../pics/cliffsbackground.jpg)  #e1f4ff ;
-	margin: auto;
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: auto;
+	background: #e1f4ff ;
 }
 #page-wrap{
 width:800px
@@ -17,7 +16,12 @@ width:800px
 	background-color: red;
 }
 #header{
+	background: url(../pics/cliffsbackground.jpg) 30% no-repeat #e1f4ff ;
+	margin: auto;
+	background-size: contain;
+	width: auto;
 	width: 50%;
+	border: 40px solid #e1f4ff;
 	padding: 300px;
 	margin: auto;
 	text-align: center;
