@@ -1,0 +1,28 @@
+body{
+	background: url(../pics/cliffsbackground.jpg)  #e1f4ff ;
+	margin: auto;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: auto;
+}
+#page-wrap{
+width:800px
+	margin: 0 auto;
+	text-align: left;
+}
+#middle{
+	margin: auto;
+	width: 800px;
+	text-align: center;
+	background-color: red;
+}
+#header{
+	width: 50%;
+	padding: 300px;
+	margin: auto;
+	text-align: center;
+	color: white;
+	font-size: 55px;
+	text-shadow: 5px 0 black, 0 3px black;
+	font-family:'Lobster', cursive;
+}
