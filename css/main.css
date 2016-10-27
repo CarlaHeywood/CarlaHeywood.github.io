@@ -11,8 +11,6 @@ body{
 	left:0;
 	background-color: white;
 	margin: 0 auto;
-	display: table-cell;
-	vertical-align: middle;
 }
 #name:hover{
 	background-color: #bca280;
