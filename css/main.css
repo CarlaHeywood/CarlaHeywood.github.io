@@ -1,27 +1,23 @@
 html,body{
 	height: 100%;
-	margin: 0;
+	margin: auto;
 }
-#first{ 
-	background-image: url('/pics/MountainsWallpaper5k.png');
-	background-repeat: no-repeat;
-	background-size: cover;
+.nav{
+	width:100%;
+	height: 70px;
 }
-
-/* Mobile image */
-@media only screen and (min-width: 1200px) {
-    /* styles for wide screens */
+a{
+	text-decoration: none;
 }
-/***************/
-
-/* Centering for page one */
-#parent1{
-	display: flex;
-    justify-content: center;
-    align-items: center;
+li{
+	list-style: none;
 }
-/*************************/
-
+#navbar{
+	position: fixed;
+	background-color: #bdc3c7;
+	height: 70px;
+	width: 100%;
+}
 #second{
 	background-color: #f1c40f;
 }
@@ -29,13 +25,12 @@ html,body{
 	background-color: #e74c3c;
 }
 #name{
-	width: 50%;
+	position: absolute;
 	text-align: center;
 	font-size: 50px;
 	text-shadow: 2px 2px 2px black;
 	color: white;
 	font-family:'Lobster', cursive;
-	margin: 0 auto;
 }
 #about{
 	width: 50%;
@@ -53,20 +48,69 @@ html,body{
 	color: white;
 	font-family:'Lobster', cursive;
 }
-
-/* Centering */
-.parent{
-	position: relative;
-	height: 100%;
-	min-height: 100%;
-	width: 100%;
-}
-.child{
-	position: absolute;
-}
-/************/
-
 .page{
 	height: 100%;
 	min-height: 100%;
 }
+
+/* Centering */
+.parent{
+	position: absolute;
+	height: 100%;
+	min-height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+.child{
+	position: relative; 
+}
+/************/
+/* Centering for page one */
+#parent1{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*************************/
+
+/* Parallax */
+#first{
+	position: relative; /* Parent div */
+	height: auto;
+	background-image: url('/pics/ParallaxPics/Back.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	overflow: hidden;
+}
+@media only screen and (min-width: 1080px) {
+ 	#parent1{ 
+	position: absolute;
+	background-image: url('/pics/ParallaxPics/Fore.png');
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-size: 900px;
+	}
+	#moon{
+		position: absolute;
+		height: 365px;
+		width: 450px;
+		margin-left: 300px;
+		margin-top: 150px;
+		background-image: url('/pics/ParallaxPics/Mid.png');
+		background-size: 450px;
+		background-repeat: no-repeat;
+		background-position: top left;
+	}
+}
+/***********/
+/* Mobile image */
+@media only screen and (max-width: 1080px) {
+ 	#first{ 
+	background-image: url('/pics/MountainsMobile.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	}
+}
+/***************/
