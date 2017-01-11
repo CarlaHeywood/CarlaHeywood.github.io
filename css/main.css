@@ -7,21 +7,21 @@ html,body{
 	.burgermenu{
 		position: fixed;
 		z-index: 100;
-		width: 40px;
-		height: 40px;
-		padding: 10px;
+		width: 125px;
+		height: 125px;
+		padding: 20px;
 		background-color: white;
 		cursor: pointer;
 	}
 	.burgermenu > div{
 		background-color: #7f8c8d;
-		height: 8px;
-		width: 40px;
-		margin-bottom: 8px;
+		height: 25px;
+		width: 125px;
+		margin-bottom: 20px;
 		border-radius: 5%;
 	}
 	.bar{
-		height:60px;
+		height:166px;
 		width: 100%;
 		position: fixed;
 		z-index: 100;
