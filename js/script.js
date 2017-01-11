@@ -1,6 +1,8 @@
 /*jslint browser: true, devel: true*/
 /*global $, jQuery, alert*/
 
+// Mobile button menu
+
 // Parallax
 $(window).scroll(function () {
 	"use strict";
