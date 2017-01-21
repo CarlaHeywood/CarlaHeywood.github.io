@@ -8,7 +8,7 @@ html,body{
 		position: fixed;
 		z-index: 100;
 		width: 75px;
-		height: 50px;
+		height: 60px;
 		padding: 20px;
 		background-color: white;
 		cursor: pointer;
@@ -32,9 +32,11 @@ html,body{
 		font-family:'Lobster', cursive;
 		font-size: 30px;
 	}
-	
 	#parent1{
-		font-size-adjust: auto;
+		width: 100%;
+	}
+	#name{
+		width: 80%;
 	}
 }
 /***************/
