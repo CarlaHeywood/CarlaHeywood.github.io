@@ -5,26 +5,28 @@ html,body{
 /* Mobile image */
 @media only screen and (max-width: 1080px) {
 	.burgermenu{
-		position: fixed;
+		position: relative;
 		z-index: 100;
-		width: 75px;
-		height: 60px;
-		padding: 20px;
+		width: 40px;
+		height: 25px;
+        margin-top: 12px;
+        margin-left: 15px;
 		background-color: white;
 		cursor: pointer;
 		right: 0;
 	}
 	.burgermenu > div{
 		background-color: #7f8c8d;
-		height: 10px;
-		width: 75px;
-		margin-bottom: 15px;
+		height: 5px;
+		width: 40px;
+		margin-bottom: 5px;
 		border-radius: 5%;
+        transition: .5s;
 	}
 	.bar{
 		display: flex;
 		color: #7f8c8d;
-		height:	100px;
+		height:	50px;
 		width: 100%;
 		position: fixed;
 		z-index: 100;
@@ -32,11 +34,26 @@ html,body{
 		font-family:'Lobster', cursive;
 		font-size: 30px;
 	}
+    /* Menu button animation */
+    .change .line1{
+        -webkit-transform: rotate(-45deg) translate(-9px,6px);
+        transform:rotate(-45deg) translate(-8px,6px);
+    }
+    .change .line2{
+        opacity: 0;
+    }
+    .change .line3{
+        -webkit-transform: rotate(45deg) translate(-8px,-8px);
+        transform:rotate(45deg) translate(-8px,-8px);
+    }
+    /*---------------*/
 	#parent1{
 		width: 100%;
 	}
 	#name{
 		width: 80%;
+        clear:both;
+        margin:auto;
 	}
 }
 /***************/
