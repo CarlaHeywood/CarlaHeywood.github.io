@@ -30,18 +30,18 @@
 			<header>
 				<div class="bar">
 					<!--p>Carla Heywood</p-->
-					<button class="burgermenu" onclick=openNav();>
+					<div class="burgermenu" onclick=openNav();>
 						<div class="line1"></div>
 						<div class="line2"></div>
 						<div class="line3"></div>
-					</button>
-                    <div class="dropNav">
+					</div>
+                    <ul class="menuOptions">
                         <!--a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a-->
-                        <a href="#first">Home</a>
-                        <a href="#second">About</a>
-                        <a href="#third">Projects</a>
-                        <a href="#fourth">Contact</a>
-                    </div>
+                            <li><a href="#first">Home</a></li>
+                            <li><a href="#second">About</a></li>
+                            <li><a href="#third">Projects</a></li>
+                            <li><a href="#fourth">Contact</a></li>
+                    </ul>
                 </div>
 			</header>
             <div class= "Page-Content">
@@ -58,7 +58,7 @@
 				<div class="page" id="second">
 					<div class="parent">
 						<div class="child" id="about">
-							<h1>About Me</h1>
+							<h1 id="AboutMe">About Me</h1>
 							<p>I am a Software Engineer.</p>
 						</div>
 					</div>
@@ -67,7 +67,7 @@
 				<div class="page" id="third">
 					<div class="parent">
 						<div class="child" id="projects">
-							<h1>Projects</h1>
+							<h1 id="Projects">Projects</h1>
 							<p>These are my projects.</p>
 						</div>
 					</div>
@@ -80,8 +80,8 @@
 								<h1>Contact</h1>
 							</div>
 							<div id="info">
-								<p>	Phone: (954)-801-9152<br>
-									Email: carlaheywood24@gmail.com<br>
+								<p>(954)-801-9152<br>
+								 carlaheywood24@gmail.com<br>
 								</p>
 							</div>
 							<div id="icons">
@@ -90,6 +90,9 @@
 								</a>
 								<a href="https://www.linkedin.com/in/carlaheywood">
 									<img src="/pics/linkedin.png">
+								</a>
+                                <a href="https://github.com/CarlaHeywood">
+									<img src="/pics/github.png">
 								</a>
 							</div>
 						</div>

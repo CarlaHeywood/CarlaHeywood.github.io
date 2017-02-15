@@ -14,6 +14,7 @@ html,body,.Page-Content{
 		background-color: white;
 		cursor: pointer;
 		right: 0;
+        border: none;
 	}
 	.burgermenu > div{
 		background-color: #7f8c8d;
@@ -68,62 +69,53 @@ html,body,.Page-Content{
         display: none;
         transition: max-height .3s ease-out;
     }
-	#name{
+	#name, #projects, #about{
         width: 100%;
         align-content: center;
         clear: both;
         margin: auto;
-        height:50%;
+        height: 50%;
         bottom: 0;
-        top: 0;
+        top: 100px;
         right:0;
         left:0;
     }
-    #contact{
-        width:100%;
-    }
-
 }
 /***************/
  #first{
 	background-color: black;
 }
 #second{
-	background-color: #f1c40f;
+	background-color: #BCE7FD;
 }
 #third{
-	background-color: #3498db;
+	background-color: #D6C9C9;
 }
 #fourth{
-	background-color: #2c3e50;
+	background-color: black;
 }
-#name{
+#name,#projects,#about{
 	position: absolute;
 	text-align: center;
 	font-size: 50px;
-	text-shadow: 2px 2px 2px black;
 	color: white;
-    font-weight: normal;
-	font-family: 'Quicksand', sans-serif;
+}
+*{
+    font-family: 'Quicksand', sans-serif;
 }
 #about, #projects{
+    margin: auto;
 	width: 50%;
 	text-align: center;
 	font-size: 50px;
-	text-shadow: 2px 2px 2px black;
-	color: white;
-    font-weight: normal;
-	font-family:'Lobster', cursive;
+	color: black;
 }
 #contact{
-	width: 50%;
+	width: auto;
 	font-size: 50px;
-	text-shadow: 2px 2px 2px black;
+	text-shadow: 2px black;
 	color: white;
-	font-family:'Lobster', cursive;
 	padding: 3%;
-	background-color: #7f8c8d;
-	box-shadow: 50px 30px 30px black;
 }
 h1{
     font-weight: normal;
@@ -132,7 +124,44 @@ h1{
 	text-align: center;
 }
 #info{
-	padding-left: 10%;
+    margin: auto;
+    text-align: center;
+}
+.bar{
+    display: inline-block;
+    margin: auto;
+    height: 50px;
+    position: fixed;
+    width:100%;
+    z-index: 100;
+    background-color: white;
+}
+li{
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    text-decoration: none;
+}
+a{
+    position: relative;
+    font-size: 25px;
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding right: 50px;
+}
+.menuOptions{
+    margin: auto;
+    z-index: 100;
+    width:100%;
+    display: block;
+    color: black;
+}
+.dropNav{
+    margin: auto;
+    z-index: 100;   
 }
 img{
 	width:100px;
@@ -142,7 +171,6 @@ img{
 	height: 100%;
 	min-height: 100%;
 }
-
 /* Centering */
 .parent{
 	position: absolute;
@@ -155,65 +183,12 @@ img{
 	position: relative;
 }
 /* To be centered */
-#parent1, #parent4, #icons{
+#parent1,#parent2,#parent3, #parent4, #icons{
 	display: flex;
     justify-content: center;
     align-items: center;
 }
 /*************************/
-/* Parallax */
+
 @media only screen and (min-width: 1080px) {
-	#first{
-		position: relative; /* Parent div */
-		height: auto;
-		background-image: url('/pics/ParallaxPics/Back.png');
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-attachment: fixed;
-		overflow: hidden;
-	}
- 	#parent1{
-		position: absolute;
-		background-image: url('/pics/ParallaxPics/Fore.png');
-		background-repeat: no-repeat;
-		background-position: right bottom;
-		background-size: 900px;
-	}
-	#moon{
-		position: absolute;
-		height: 365px;
-		width: 450px;
-		margin-left: 300px;
-		margin-top: 150px;
-		background-image: url('/pics/ParallaxPics/Mid.png');
-		background-size: 450px;
-		background-repeat: no-repeat;
-		background-position: top left;
-	}
-/*************/
-	nav{
-		width:100%;
-		height: 40px;
-	}
-	a{
-		text-decoration: none;
-		color: white;
-	}
-	li{
-		list-style: none;
-		display: inline-block;
-		padding: 10px;
-		padding-right: 170px;
-		font-family:'Lobster', cursive;
-		font-size: 25px;
-	}
-	.nav{
-		background-color: #7f8c8d;
-		height: auto;
-		width: 100%;
-		text-align: center;
-		margin-top: 0;
-		z-index: 100;
-		position: fixed;
-	}
 }
