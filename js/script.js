@@ -6,13 +6,10 @@
 // Parallax
 $(window).scroll(function () {
 	"use strict";
-	
+
 	// How far I have scrolled
 	var wScroll = $(this).scrollTop();
-	
-	$('#moon').css({
-		'transform' : 'translate(0px , ' + wScroll / 4 + '%)'
-	});
+
 	$('#name').css({
 		'transform' : 'translate(0px ,  ' + wScroll / 8 + '%)'
 	});
@@ -20,22 +17,33 @@ $(window).scroll(function () {
 // Burger menu animated
 function animateMenu(x) {
     "use strict";
-    x.classList.toggle("change");
+		if (document.getElementById("mySidenav").style.width == "250px") {
+			closeNav(x);
+		}
+		else{
+			openNav(x);
+		}
 }
-// Side Menu animated
-var acc = document.getElementsByClassName("dropNav");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].onclick = function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-  	  panel.style.maxHeight = null;
-    } else {
-  	  panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  }
+function fromContent(x){
+	if(document.getElementById("mySidenav").style.width == "250px"){
+		animateMenu(x);
+	}
+	else {
+		return;
+	}
+}
+function changeMenu(x){
+	x.classList.toggle("change");
+}
+// Side menu for Mobile
+function openNav(x) {
+		changeMenu(x);
+    document.getElementById("mySidenav").style.width = "250px";
+}
+/* Set the width of the side navigation to 0 */
+function closeNav(x) {
+		changeMenu(x);
+    document.getElementById("mySidenav").style.width = "0px";
 }
 //-----------------
 // Smooth Scrolling
@@ -57,7 +65,7 @@ $(document).ready(function () {
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
             }, 800, function () {
-   
+
         // Add hash (#) to URL when done scrolling (default click behavior)
                 window.location.hash = hash;
             });

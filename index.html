@@ -1,12 +1,12 @@
 <!doctype html>
 <html>
-	
+
 	<head>
 		<meta charset="utf-8"/>
-		
+
 		<!-- Tab Title -->
 		<title> Carla Heywood</title>
-		
+
 		<!-- Refrencing -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -14,44 +14,43 @@
 		</script>
 		<!-- File MUST appear after -->
 		<script src="js/script.js"></script>
-	
-		
+
 		<!-- StyleSheet -->
 		<link rel="stylesheet" type="text/css" href="css/main.css"/>
-		
+
 		<!-- Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
-	</head>	
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
+	</head>
 
-	<body>	
+	<body>
 			<!-- Nav Bar -->
-			<header>
-				<div class="bar">
-					<!--p>Carla Heywood</p-->
-					<div class="burgermenu" onclick=openNav();>
-						<div class="line1"></div>
-						<div class="line2"></div>
-						<div class="line3"></div>
-					</div>
-                    <ul class="menuOptions">
-                        <!--a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a-->
-                            <li><a href="#first">Home</a></li>
-                            <li><a href="#second">About</a></li>
-                            <li><a href="#third">Projects</a></li>
-                            <li><a href="#fourth">Contact</a></li>
-                    </ul>
-                </div>
-			</header>
-            <div class= "Page-Content">
+		<header>
+			<div class="bar">
+				<!--p>Carla Heywood</p-->
+				<div class="burgermenu" id="burgermenu" onclick="animateMenu(this)">
+					<div class="line1"></div>
+					<div class="line2"></div>
+					<div class="line3"></div>
+				</div>
+			  <ul id="mySidenav" class="menuOptions">
+			  <!--a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a-->
+			    <li><a href="#first" onclick="animateMenu(getElementById('burgermenu'))">Home</a></li>
+			    <li><a href="#second" onclick="animateMenu(getElementById('burgermenu'))">About</a></li>
+			    <li><a href="#third" onclick="animateMenu(getElementById('burgermenu'))">Projects</a></li>
+			    <li><a href="#fourth" onclick="animateMenu(getElementById('burgermenu'))">Contact</a></li>
+	      </ul>
+	    </div>
+		</header>
+      <div class= "Page-Content" onclick="fromContent(getElementById('burgermenu'))">
 				<!-- First Page -->
 				<div class="page" id="first">
 				<div class="child" id="moon"></div>
 					<div class="parent" id="parent1">
 						<div class="child" id="name">
 							<h1>Carla Heywood</h1>
-						</div>	
+						</div>
 					</div>
 				</div>
 				<!-- Second Page -->
@@ -98,7 +97,7 @@
 						</div>
 					</div>
 				</div>
-            </div>
+  	</div>
 	</body>
-	
+
 </html>
