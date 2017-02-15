@@ -2,7 +2,7 @@
 /*global $, jQuery, alert*/
 
 // Mobile button menu
-
+window.onresize = function(){location.reload();}
 // Parallax
 $(window).scroll(function () {
 	"use strict";
@@ -17,6 +17,9 @@ $(window).scroll(function () {
 // Burger menu animated
 function animateMenu(x) {
     "use strict";
+		if ($(window).width()>1080){
+			return;
+		}
 		if (document.getElementById("mySidenav").style.width == "250px") {
 			closeNav(x);
 		}

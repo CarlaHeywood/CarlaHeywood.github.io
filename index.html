@@ -1,12 +1,9 @@
 <!doctype html>
 <html>
-
 	<head>
 		<meta charset="utf-8"/>
-
 		<!-- Tab Title -->
 		<title> Carla Heywood</title>
-
 		<!-- Refrencing -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -14,73 +11,68 @@
 		</script>
 		<!-- File MUST appear after -->
 		<script src="js/script.js"></script>
-
 		<!-- StyleSheet -->
 		<link rel="stylesheet" type="text/css" href="css/main.css"/>
-
+		<link rel="stylesheet" type="text/css" href="css/page.css"/>
+		<link rel="stylesheet" type="text/css" href="css/nav.css"/>
 		<!-- Fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
 	</head>
-
 	<body>
 			<!-- Nav Bar -->
 		<header>
 			<div class="bar">
-				<!--p>Carla Heywood</p-->
 				<div class="burgermenu" id="burgermenu" onclick="animateMenu(this)">
 					<div class="line1"></div>
 					<div class="line2"></div>
 					<div class="line3"></div>
 				</div>
 			  <ul id="mySidenav" class="menuOptions">
-			  <!--a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a-->
-			    <li><a href="#first" onclick="animateMenu(getElementById('burgermenu'))">Home</a></li>
-			    <li><a href="#second" onclick="animateMenu(getElementById('burgermenu'))">About</a></li>
-			    <li><a href="#third" onclick="animateMenu(getElementById('burgermenu'))">Projects</a></li>
-			    <li><a href="#fourth" onclick="animateMenu(getElementById('burgermenu'))">Contact</a></li>
+			    <li><a href="#Home" onclick="animateMenu(getElementById('burgermenu'))">Home</a></li>
+			    <li><a href="#About" onclick="animateMenu(getElementById('burgermenu'))">About</a></li>
+			    <li><a href="#Projects" onclick="animateMenu(getElementById('burgermenu'))">Projects</a></li>
+			    <li><a href="#Contact" onclick="animateMenu(getElementById('burgermenu'))">Contact</a></li>
 	      </ul>
 	    </div>
 		</header>
-      <div class= "Page-Content" onclick="fromContent(getElementById('burgermenu'))">
-				<!-- First Page -->
-				<div class="page" id="first">
-				<div class="child" id="moon"></div>
+    <div class= "Page-Content" onclick="fromContent(getElementById('burgermenu'))">
+				<!-- Home 1-->
+				<div class="page" id="Home">
 					<div class="parent" id="parent1">
-						<div class="child" id="name">
+						<div class="child" id="child1">
 							<h1>Carla Heywood</h1>
 						</div>
 					</div>
 				</div>
-				<!-- Second Page -->
-				<div class="page" id="second">
-					<div class="parent">
-						<div class="child" id="about">
+				<!-- About 2-->
+				<div class="page" id="About">
+					<div class="parent" id="parent2">
+						<div class="child" id="child2">
 							<h1 id="AboutMe">About Me</h1>
 							<p>I am a Software Engineer.</p>
 						</div>
 					</div>
 				</div>
-				<!-- Third Page -->
-				<div class="page" id="third">
-					<div class="parent">
-						<div class="child" id="projects">
+				<!-- Projects 3-->
+				<div class="page" id="Projects">
+					<div class="parent" id="parent3">
+						<div class="child" id="child3">
 							<h1 id="Projects">Projects</h1>
 							<p>These are my projects.</p>
 						</div>
 					</div>
 				</div>
-				<!-- Fourth Page -->
-				<div class="page" id="fourth">
+				<!-- Contact 4-->
+				<div class="page" id="Contact">
 					<div class="parent" id="parent4">
-						<div class="child" id="contact">
+						<div class="child" id="child4">
 							<div id="contactme">
 								<h1>Contact</h1>
 							</div>
 							<div id="info">
-								<p>(954)-801-9152<br>
-								 carlaheywood24@gmail.com<br>
+								<p>
+									<a href="tel:954-801-9152" class="phone">(954)-801-9152</a>
+									<a href="mailto:carlaheywood@gmail.com" class="email">carlaheywood24@gmail.com</a><br>
 								</p>
 							</div>
 							<div id="icons">
@@ -90,7 +82,7 @@
 								<a href="https://www.linkedin.com/in/carlaheywood">
 									<img src="/pics/linkedin.png">
 								</a>
-                                <a href="https://github.com/CarlaHeywood">
+                <a href="https://github.com/CarlaHeywood">
 									<img src="/pics/github.png">
 								</a>
 							</div>
