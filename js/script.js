@@ -1,8 +1,18 @@
 /*jslint browser: true, devel: true*/
 /*global $, jQuery, alert*/
 
-// Mobile button menu
+// Refresh on resize
 window.onresize = function(){location.reload();}
+// Burgermenu color change
+$(function(){
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop(); // how many pixels you've scrolled
+      
+        if(scroll>10){
+            (document.getElementByClassName("line").style.backgroundColor) = "black";
+        }
+    });
+});
 // Parallax
 $(window).scroll(function () {
 	"use strict";
@@ -10,7 +20,7 @@ $(window).scroll(function () {
 	// How far I have scrolled
 	var wScroll = $(this).scrollTop();
 
-	$('#name').css({
+	$('#child1').css({
 		'transform' : 'translate(0px ,  ' + wScroll / 8 + '%)'
 	});
 });
