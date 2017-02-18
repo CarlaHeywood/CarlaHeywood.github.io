@@ -26,31 +26,30 @@
 #About{
  background-color: #BCE7FD;
 }
+#child4{
+	bottom:50px;
+}
 #Projects{
- background-color: #D6C9C9;
+ 	background-color: #D6C9C9;
+}
+#explore{
+	font-size: 20px;
 }
 #Contact{
  background-color: black;
 }
-#child1,#child3,#child2{
- position: absolute;
- text-align: center;
- font-size: 50px;
- color: white;
-}
 #child2, #child3{
-  margin: auto;
-	width: 50%;
-	text-align: center;
-	font-size: 50px;
 	color: black;
 }
-#child4{
+#child1, #child4{
+	color: white;
+}
+#child1, #child2, #child3, #child4{
+	margin: auto;
 	width: auto;
+	text-align: center;
 	font-size: 50px;
 	text-shadow: 2px black;
-	color: white;
-	padding: 3%;
 }
 #contactme{
 	text-align: center;
