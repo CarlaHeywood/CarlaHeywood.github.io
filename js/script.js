@@ -2,7 +2,7 @@
 /*global $, jQuery, alert*/
 
 // Mobile button menu
-window.onresize = function(){location.reload();}
+//window.onresize = function(){location.reload();}
 // Parallax
 $(window).scroll(function () {
 	"use strict";
@@ -10,7 +10,7 @@ $(window).scroll(function () {
 	// How far I have scrolled
 	var wScroll = $(this).scrollTop();
 
-	$('#name').css({
+	$('#child1').css({
 		'transform' : 'translate(0px ,  ' + wScroll / 8 + '%)'
 	});
 });
@@ -43,7 +43,7 @@ function openNav(x) {
 		changeMenu(x);
     document.getElementById("mySidenav").style.width = "250px";
 }
-/* Set the width of the side navigation to 0 */
+// Set the width of the side navigation to 0
 function closeNav(x) {
 		changeMenu(x);
     document.getElementById("mySidenav").style.width = "0px";

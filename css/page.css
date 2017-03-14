@@ -15,7 +15,7 @@
 }
 /* To be centered */
 #parent1,#parent2,#parent3, #parent4, #icons{
-	display: flex;
+		display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -23,17 +23,26 @@
 #Home{
  background-color: black;
 }
-#About{
- background-color: #BCE7FD;
-}
 #Projects{
  background-color: #D6C9C9;
+}
+#explore{
+	margin: auto;
+	width: 50%;
+	font-size: 25px;
+	padding: 10px;
+	border: 1px solid black;
+}
+#explore:hover{
+	cursor: pointer;
+}
+#About{
+ background-color: #BCE7FD;
 }
 #Contact{
  background-color: black;
 }
 #child1,#child3,#child2{
- position: absolute;
  text-align: center;
  font-size: 50px;
  color: white;

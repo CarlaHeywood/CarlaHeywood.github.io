@@ -2,6 +2,23 @@ html,body,.Page-Content{
 	height: 100%;
 	margin: 0;
 }
+ #first{
+	background-color: black;
+}
+#second{
+	background-color: #BCE7FD;
+}
+#third{
+	background-color: #D6C9C9;
+}
+#fourth{
+	background-color: black;
+}
+#name,#projects,#about{
+	text-align: center;
+	font-size: 50px;
+	color: white;
+}
 *{
     font-family: 'Quicksand', sans-serif;
 }
