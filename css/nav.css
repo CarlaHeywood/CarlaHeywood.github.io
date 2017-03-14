@@ -6,13 +6,30 @@
     height: 50px;
     position: fixed;
     width: 100%;
-    z-index: 100;
     background-color: white;
 }
 .menuOptions{
     margin: auto;
     z-index: 100;
     width:100%;
+}
+li{
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    text-decoration: none;
+		color: white;
+		right:35px;
+}
+a{
+		color:black;
+    position: relative;
+    font-size: 25px;
+    text-decoration: none;
+		padding-top: 10px;
+		padding-left: 50px;
+    padding-right: 50px;
+		display: block;
 }
 @media only screen and (max-width: 1080px) {
   .bar{

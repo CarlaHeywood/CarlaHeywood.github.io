@@ -1,8 +1,10 @@
 /*jslint browser: true, devel: true*/
 /*global $, jQuery, alert*/
 
-// Mobile button menu
-//window.onresize = function(){location.reload();}
+// Refresh on resize
+if($window).width()>1080){
+		window.onresize = function(){location.reload();}
+}
 // Parallax
 $(window).scroll(function () {
 	"use strict";
@@ -11,12 +13,12 @@ $(window).scroll(function () {
 	var wScroll = $(this).scrollTop();
 
 	$('#child1').css({
-		'transform' : 'translate(0px ,  ' + wScroll / 8 + '%)'
+		'transform' : 'translate(0px ,  ' + wScroll / 6 + '%)'
 	});
 });
 // Burger menu animated
 function animateMenu(x) {
-    "use strict";
+   "use strict";
 		if ($(window).width()>1080){
 			return;
 		}
@@ -41,12 +43,12 @@ function changeMenu(x){
 // Side menu for Mobile
 function openNav(x) {
 		changeMenu(x);
-    document.getElementById("mySidenav").style.width = "40%";
+   document.getElementById("mySidenav").style.width = "40%";
 }
-// Set the width of the side navigation to 0
+/* Set the width of the side navigation to 0 */
 function closeNav(x) {
 		changeMenu(x);
-    document.getElementById("mySidenav").style.width = "0px";
+   document.getElementById("mySidenav").style.width = "0px";
 }
 //-----------------
 // Smooth Scrolling

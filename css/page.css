@@ -27,17 +27,6 @@
  	background-color: #D6C9C9;
 }
 #explore{
-	margin: 0;
-	font-size: 25px;
-	padding: 10px;
-	border: 1px solid black;
-	transition: 160ms ease-out;
-}
-#explore:hover{
-	cursor: pointer;
-	transition: stroke-dashoffset 380ms linear;
-}
-#explore{
 	margin: auto;
 	width: 50%;
 	font-size: 25px;
@@ -53,11 +42,6 @@
 #Contact{
  background-color: black;
 }
-#child1,#child3,#child2{
- text-align: center;
- font-size: 50px;
- color: white;
-}
 #child2, #child3{
 	color: black;
 }
@@ -69,7 +53,6 @@
 	width: auto;
 	text-align: center;
 	font-size: 50px;
-	text-shadow: 2px black;
 }
 #contactme{
 	text-align: center;
