@@ -1,6 +1,7 @@
 html,body,.Page-Content{
 	height: 100%;
 	margin: 0;
+    display:block;
 }
  #first{
 	background-color: black;
