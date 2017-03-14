@@ -1,11 +1,12 @@
 .bar{
-  margin: auto;
-  z-index: 100;
-  position: fixed;
-  text-align: center;
-  background-color: white;
-  width: 100%;
-  height: 50px;
+    display: inline-block;
+		text-align: center;
+    margin: auto;
+    height: 50px;
+    position: fixed;
+    width:100%;
+    z-index: 100;
+    background-color: white;
 }
 .menuOptions{
   margin: auto;
@@ -28,31 +29,31 @@ a{
 }
 @media only screen and (max-width: 1080px) {
   .bar{
-    height:	0px;
+    height:	50px;
     width: 100%;
     position: fixed;
     z-index: 100;
+    background-color: white;
     font-size: 30px;
-    top:0;
-    bottom:100%;
   }
   .burgermenu{
+		background-color: white;
 		position: relative;
 		z-index: 100;
-		width: 70px;
-		height: 55px;
-    margin-top: 75px;
-  	margin-left: 75px;
+		width: 40px;
+		height: 25px;
+    margin-top: 12px;
+  	margin-left: 15px;
 		cursor: pointer;
 		right: 0;
     border: none;
 		transition: .3s;
 	}
 	.burgermenu > div{
-		background-color: white;
-		height: 10%;
-		width: 100%;
-		margin-bottom: 20%;
+		background-color: black;
+		height: 5px;
+		width: 35px;
+		margin-bottom: 5px;
 		border-radius: 10%;
     transition: .5s;
 	}
@@ -78,24 +79,22 @@ a{
 		transition: .5s;
 	}
 	#mySidenav > li{
-    top: 100px;
 		list-style: none;
-		padding-bottom: 150px;
+		padding-bottom: 30px;
 		padding-left: 65px;
 		text-align: center;
 	}
     /* Menu button animation */
-    .change #line1{
-        opacity: 0;
-        width: 0;
+    .change .line1{
+        -webkit-transform: rotate(-45deg) translate(-9px,6px);
+        transform:rotate(-45deg) translate(-8px,6px);
     }
-    .change #line2{
+    .change .line2{
         opacity: 0;
-        width: 0;
     }
-    .change #line3{
-        opacity: 0;
-        width: 0;
+    .change .line3{
+        -webkit-transform: rotate(45deg) translate(-8px,-8px);
+        transform:rotate(45deg) translate(-8px,-8px);
     }
     /*---------------*/
 }
