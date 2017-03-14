@@ -23,16 +23,6 @@
 #Home{
  background-color: black;
 }
-#explore{
-	margin: auto;
-	width: 50%;
-	font-size: 25px;
-	padding: 10px;
-	border: 1px solid black;
-}
-#explore:hover{
-	cursor: pointer;
-}
 #About{
  background-color: #BCE7FD;
 }
@@ -41,6 +31,12 @@
 }
 #Contact{
  background-color: black;
+}
+#child1,#child3,#child2{
+ position: absolute;
+ text-align: center;
+ font-size: 50px;
+ color: white;
 }
 #child2, #child3{
 	color: black;

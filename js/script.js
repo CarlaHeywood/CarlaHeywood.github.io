@@ -1,10 +1,9 @@
 /*jslint browser: true, devel: true*/
 /*global $, jQuery, alert*/
 
-// Refresh on resize
-if($window).width()>1080){
-		window.onresize = function(){location.reload();}
-}
+// Mobile button menu
+window.onresize = function(){location.reload();}
+
 // Parallax
 $(window).scroll(function () {
 	"use strict";
@@ -12,8 +11,9 @@ $(window).scroll(function () {
 	// How far I have scrolled
 	var wScroll = $(this).scrollTop();
 
-	$('#child1').css({
-		'transform' : 'translate(0px ,  ' + wScroll / 6 + '%)'
+	$('#name').css({
+		'transform' : 'translate(0px ,  ' + wScroll / 8 + '%)'
+
 	});
 });
 // Burger menu animated
