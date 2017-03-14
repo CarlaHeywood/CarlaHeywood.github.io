@@ -42,15 +42,11 @@ function changeMenu(x){
 function openNav(x) {
 		changeMenu(x);
     document.getElementById("mySidenav").style.width = "40%";
-    document.getElementById("line1").style.backgroundColor = "black";
-    document.getElementById("line3").style.backgroundColor = "black";
 }
 // Set the width of the side navigation to 0
 function closeNav(x) {
 		changeMenu(x);
     document.getElementById("mySidenav").style.width = "0px";
-    document.getElementById("line1").style.backgroundColor = "white";
-    document.getElementById("line3").style.backgroundColor = "white";
 }
 //-----------------
 // Smooth Scrolling
