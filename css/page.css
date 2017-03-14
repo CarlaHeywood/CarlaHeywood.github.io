@@ -33,7 +33,15 @@
  	background-color: #D6C9C9;
 }
 #explore{
-	font-size: 20px;
+	margin: 0;
+	font-size: 25px;
+	padding: 10px;
+	border: 1px solid black;
+	transition: 160ms ease-out;
+}
+#explore:hover{
+	cursor: pointer;
+	transition: stroke-dashoffset 380ms linear;
 }
 #Contact{
  background-color: black;

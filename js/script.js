@@ -1,6 +1,19 @@
 /*jslint browser: true, devel: true*/
 /*global $, jQuery, alert*/
 
+// Animated border
+var pathLength = explore.width() / 2;
+
+'#explore'.css({
+  'stroke-dasharray': pathLength,
+  'stroke-dashoffset': pathLength
+});
+$('#explore').on('mouseover', function(){
+  '#explore'.css('stroke-dashoffset', 0);
+});
+$('#explore').on('mouseout', function() {
+  '#explore'.css('stroke-dashoffset', pathLength);
+});
 // Refresh on resize
 if($(window).width()>1080){
   window.onresize = function(){location.reload();}
