@@ -1,0 +1,41 @@
+.bar{
+  top: 0;
+}
+#projectsParent{
+  margin: auto;
+  font-size: 0;
+  overflow-y: scroll;
+  background-color: black;
+  display: flex;
+}
+#work{
+  display: inline-block;
+  margin: auto;
+  margin-top: 250px;
+  height:100%;
+  width: 85%;
+}
+.cell{
+  padding: 25px;
+  height: auto;
+}
+.subject{
+  text-align: center;
+  font-size: 50px;
+}
+#guardians, #nerdup, #mygraphics, #mycode{
+  font-size: 25px;
+  cursor:pointer;
+}
+#guardians{
+  background-color: #F7CA18;
+}
+#nerdup{
+  background-color: #26A65B;
+}
+#mygraphics{
+  background-color: #FF5E5B;
+}
+#mycode{
+  background-color: #AAE0F6;
+}

@@ -29,7 +29,7 @@ a{
 @media only screen and (max-width: 1080px) {
   .bar{
     background-color: black;
-    height:	230px;
+    height:	250px;
     width: 100%;
     position: fixed;
     z-index: 100;

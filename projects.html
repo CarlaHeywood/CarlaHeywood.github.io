@@ -1,22 +1,25 @@
 <!doctype html>
 <html>
 	<head>
-    <meta charset="utf-8"/>
-		<!-- Tab Title -->
-		<title> Projects </title>
-		<!-- Refrencing -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-		<!-- File MUST appear after -->
-		<script src="js/script.js"></script>
+		<head>
+			<meta charset="utf-8"/>
+			<!-- Tab Title -->
+			<title> Carla Heywood</title>
+			<!-- Refrencing -->
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+			<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+			<!-- File MUST appear after -->
+			<script src="js/script.js"></script>
 
-		<!-- StyleSheet -->
-		<link rel="stylesheet" type="text/css" href="css/main.css"/>
-		<link rel="stylesheet" type="text/css" href="css/page.css"/>
-		<link rel="stylesheet" type="text/css" href="css/nav.css"/>
-
-		<!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
+			<!-- StyleSheet -->
+			<link rel="stylesheet" type="text/css" href="css/main.css"/>
+			<link rel="stylesheet" type="text/css" href="css/page.css"/>
+			<link rel="stylesheet" type="text/css" href="css/nav.css"/>
+			<link rel="stylesheet" type="text/css" href="css/projects.css"/>
+			<!-- Fonts -->
+	    <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
+		</head>
   </head>
   <body>
     <!-- Nav Bar -->
@@ -28,7 +31,7 @@
         <div class="line3"></div>
       </div>
       <ul id="mySidenav" class="menuOptions">
-        <li><a href="#index.html" onclick="animateMenu(getElementById('burgermenu'))">Home</a></li>
+        <li><a href="index.html" onclick="animateMenu(getElementById('burgermenu'))">Home</a></li>
         <li><a href="#About" onclick="animateMenu(getElementById('burgermenu'))">About</a></li>
         <li><a href="#Contact" onclick="animateMenu(getElementById('burgermenu'))">Contact</a></li>
       </ul>
@@ -36,8 +39,34 @@
     </div>
   </header>
   <div class= "Page-Content" onclick="fromContent(getElementById('burgermenu'))">
-    <h1> Hello World </h1>
-
-  </div>
+		<div class="page" id="projects">
+			<div class="parent" id="projectsParent">
+					<div id="work">
+						<div class="cell" id="mygraphics">
+							<div class="subject"> My Graphics</div>
+						</div>
+						<div class="cell" id="mycode">
+							<div class="subject">My Code</div>
+						</div>
+						<div class="cell" onclick="location.href='http://www.guardiansforthemissing.com/'"; id="guardians">
+              <div class="subject">Guardians for the Missing</div> <br>
+				      A non-profit organization that provides underwater investigative searches
+				      for missing individuals and their loved ones in the hopes of solving their
+				      disappearance and bringing closure to their families. I created and maintain
+							their website and social media profiles.
+						</div>
+						<div class="cell" onclick="location.href='https://carlaheywood.github.io/NerdUp/'"; id="nerdup">
+							<div class="subject">Nerd Up</div> <br>
+							A website for CS students to collaborate on projects and homework together.
+				      During an open source hackathon, my team found code for “Code mirror” which allows
+							2 or more people to work on code simultaneously, across the world. When you have found
+							a partner or group to work on a project, there will be tutors available to help when needed.
+							We won the hackathon with this project. “Code Mirror” was implemented on our page in
+							JavaScript and using their API. We also used HTML and CSS.
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
   </body>
 </html>

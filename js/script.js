@@ -1,10 +1,6 @@
 /*jslint browser: true, devel: true*/
 /*global $, jQuery, alert*/
 
-// Refresh when resized
-if($(window).width()>1080){
-	window.location.reload()
-}
 // Parallax
 $(window).scroll(function () {
 	"use strict";
