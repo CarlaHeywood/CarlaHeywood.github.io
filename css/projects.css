@@ -18,6 +18,7 @@
 .cell{
   padding: 25px;
   height: auto;
+  margin-bottom: 25px;
 }
 .subject{
   text-align: center;

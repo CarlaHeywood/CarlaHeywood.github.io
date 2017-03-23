@@ -36,6 +36,7 @@ a{
     font-size: 30px;
   }
   .logo{
+    cursor: pointer;
     margin: auto;
     position: fixed;
     top:50px;
