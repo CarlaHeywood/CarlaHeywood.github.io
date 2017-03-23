@@ -1,9 +1,10 @@
 /*jslint browser: true, devel: true*/
 /*global $, jQuery, alert*/
 
-// Mobile button menu
-window.onresize = function(){location.reload();}
-
+// Refresh when resized
+if($(window).width()>1080){
+	window.location.reload()
+}
 // Parallax
 $(window).scroll(function () {
 	"use strict";
@@ -22,7 +23,7 @@ function animateMenu(x) {
 		if ($(window).width()>1080){
 			return;
 		}
-		if (document.getElementById("mySidenav").style.width == "40%") {
+		if (document.getElementById("mySidenav").style.height == "5%") {
 			closeNav(x);
 		}
 		else{
@@ -30,7 +31,7 @@ function animateMenu(x) {
 		}
 }
 function fromContent(x){
-	if(document.getElementById("mySidenav").style.width == "40%"){
+	if(document.getElementById("mySidenav").style.height == "5%"){
 		animateMenu(x);
 	}
 	else {
@@ -43,12 +44,13 @@ function changeMenu(x){
 // Side menu for Mobile
 function openNav(x) {
 		changeMenu(x);
-   document.getElementById("mySidenav").style.width = "40%";
+   document.getElementById("mySidenav").style.height = "5%";
+	 document.getElementById("Page-Content").style.opacity = "0.5";
 }
 /* Set the width of the side navigation to 0 */
 function closeNav(x) {
 		changeMenu(x);
-   document.getElementById("mySidenav").style.width = "0px";
+   document.getElementById("mySidenav").style.height = "0px";
 }
 //-----------------
 // Smooth Scrolling

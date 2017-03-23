@@ -31,10 +31,11 @@
 				</div>
 			  <ul id="mySidenav" class="menuOptions">
 			    <li><a href="#Home" onclick="animateMenu(getElementById('burgermenu'))">Home</a></li>
+					<li><a href="#Projects" onclick="animateMenu(getElementById('burgermenu'))">Projects</a></li>
 			    <li><a href="#About" onclick="animateMenu(getElementById('burgermenu'))">About</a></li>
-			    <li><a href="#Projects" onclick="animateMenu(getElementById('burgermenu'))">Projects</a></li>
 			    <li><a href="#Contact" onclick="animateMenu(getElementById('burgermenu'))">Contact</a></li>
 	      </ul>
+				<div class="logo"></div>
 	    </div>
 		</header>
     <div class= "Page-Content" onclick="fromContent(getElementById('burgermenu'))">
@@ -42,25 +43,25 @@
 				<div class="page" id="Home">
 					<div class="parent" id="parent1">
 						<div class="child" id="child1">
-							<h1>Carla Heywood</h1>
+							<h1 id="name">Carla Heywood</h1>
 						</div>
 					</div>
 				</div>
-				<!-- About 2-->
+				<!-- Projects 2-->
+				<div class="page" id="Projects">
+					<div class="parent" id="parent3">
+						<div class="child" id="child3">
+							<h1 id="Projects">Projects</h1>
+							<a id="explore"> Explore my work </a>
+						</div>
+					</div>
+				</div>
+				<!-- About 3-->
 				<div class="page" id="About">
 					<div class="parent" id="parent2">
 						<div class="child" id="child2">
 							<h1 id="AboutMe">About Me</h1>
 							<p>I am a Software Engineer.</p>
-						</div>
-					</div>
-				</div>
-				<!-- Projects 3-->
-				<div class="page" id="Projects">
-					<div class="parent" id="parent3">
-						<div class="child" id="child3">
-							<h1 id="Projects">Projects</h1>
-							<p>These are my projects.</p>
 						</div>
 					</div>
 				</div>

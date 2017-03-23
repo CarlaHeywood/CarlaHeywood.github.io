@@ -1,10 +1,10 @@
 .page{
+	background-color: black;
 	height: 100%;
 	min-height: 100%;
 }
 /* Centering */
 .parent{
-	position: absolute;
 	height: 100%;
 	min-height: 100%;
 	width: 100%;
@@ -15,40 +15,32 @@
 }
 /* To be centered */
 #parent1,#parent2,#parent3, #parent4, #icons{
-	display: flex;
+		display: flex;
     justify-content: center;
     align-items: center;
 }
 /*************************/
-#Home{
- background-color: black;
-}
-#About{
- background-color: #BCE7FD;
-}
-#Projects{
- background-color: #D6C9C9;
+#explore{
+	margin: 0;
+	font-size: 50%;
+	border: 1px solid #AAE0F6;
+	color: white;
+	padding: 10px;
+	cursor: pointer;
 }
 #Contact{
  background-color: black;
 }
 #child1,#child3,#child2{
- position: absolute;
  text-align: center;
  font-size: 50px;
- color: white;
-}
-#child2, #child3{
-	color: black;
-}
-#child1, #child4{
-	color: white;
 }
 #child1, #child2, #child3, #child4{
 	margin: auto;
 	width: auto;
 	text-align: center;
 	font-size: 50px;
+	color: white;
 }
 #contactme{
 	text-align: center;
@@ -62,3 +54,7 @@
   padding-bottom: 5px;
   font-size: 50px;
 }
+@media only screen and (max-width: 1080px) {
+	#Home{
+		display:none;
+	}
