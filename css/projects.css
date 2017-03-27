@@ -1,3 +1,7 @@
+*{
+    font-family: 'Anton', sans-serif;
+    color: white
+}
 .bar{
   top: 0;
 }
@@ -13,12 +17,16 @@
   margin: auto;
   margin-top: 250px;
   height:100%;
-  width: 85%;
+  width: 90%;
 }
 .cell{
-  padding: 25px;
+  padding: 10%;
   height: auto;
   margin-bottom: 25px;
+}
+.cell::after{
+content: "";
+  opacity: .5;
 }
 .subject{
   text-align: center;
@@ -29,14 +37,15 @@
   cursor:pointer;
 }
 #guardians{
-  background-color: #F7CA18;
+  background-color: pink;
 }
 #nerdup{
-  background-color: #26A65B;
+  background-color: #AAE0F6;
 }
 #mygraphics{
-  background-color: #FF5E5B;
+  background-color: lightblue;
 }
 #mycode{
-  background-color: #AAE0F6;
+  color: white;
+  background-color: grey;
 }
