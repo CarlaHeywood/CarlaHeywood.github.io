@@ -23,6 +23,9 @@
 #parent1,#parent2,#parent3, #parent4,{
 	scroll-snap-coordinate: 100px 0%;
 }
+#parent2{
+	height:auto;
+}
 #triangle{
 	margin:auto;
 	background-image: url("/pics/BlueTriangle.png");

@@ -15,7 +15,7 @@ li{
   position: relative;
   display: inline-block;
   list-style: none;
-  padding-left:
+  font-family: 'Quicksand', sans-serif;
 }
 a{
   text-decoration: none;
@@ -25,6 +25,7 @@ a{
   padding-top: 10px;
   padding-left: 50px;
   padding-right: 50px;
+  font-family: 'Quicksand', sans-serif;
 }
 @media only screen and (max-width: 1080px) {
   .bar{

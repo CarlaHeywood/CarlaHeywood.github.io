@@ -1,6 +1,6 @@
 *{
     font-family: 'Anton', sans-serif;
-    color: white
+    color: white;
 }
 .bar{
   top: 0;
@@ -35,17 +35,5 @@ content: "";
 #guardians, #nerdup, #mygraphics, #mycode{
   font-size: 25px;
   cursor:pointer;
-}
-#guardians{
-  background-color: pink;
-}
-#nerdup{
-  background-color: #AAE0F6;
-}
-#mygraphics{
-  background-color: lightblue;
-}
-#mycode{
-  color: white;
-  background-color: grey;
+  background-color: #bdc3c7;
 }
