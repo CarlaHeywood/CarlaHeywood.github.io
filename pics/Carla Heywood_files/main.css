@@ -1,0 +1,15 @@
+html,body,.Page-Content{
+	height: 100%;
+	margin: 0;
+	background-color: black;
+}
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+h1{
+    font-weight: normal;
+}
+img{
+	width: 100px;
+	margin-right: 35px;
+}
