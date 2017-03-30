@@ -50,6 +50,7 @@ a{
 @media only screen and (max-width: 1080px) {
   .bar{
     background-color: black;
+    text-align: center;
     height:	14%;
     width: 100%;
     position: fixed;
@@ -101,17 +102,21 @@ a{
 		padding:0;
 		transition: .5s;
 	}
-	#mySidenav > a{
+  a{
 		z-index: 100;
 		text-decoration: none;
 		font-size: 25px;
 		transition: .5s;
+    color:black;
 	}
-	#mySidenav > li{
+  li{
     padding-top: 1%;
 		list-style: none;
 		text-align: center;
 	}
+  .contactLink{
+    border: none;
+  }
     /* Menu button animation */
     .change .line1{
       height: 0;
