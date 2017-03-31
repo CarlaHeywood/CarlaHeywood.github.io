@@ -11,19 +11,16 @@
 }
 #work{
   display: inline-block;
+  position: relative;
   margin: auto;
-  margin-top: 250px;
+  top: 14%;
   height:100%;
-  width: 90%;
+  width: 95%;
 }
 .cell{
   padding: 10%;
   height: auto;
   margin-bottom: 25px;
-}
-.cell::after{
-content: "";
-  opacity: .5;
 }
 .subject{
   text-align: center;

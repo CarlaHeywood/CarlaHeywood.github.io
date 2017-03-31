@@ -74,4 +74,8 @@ $(document).ready(function () {
             });
         } // End if
     });
+
+
+		// Page Opener
+		//$('#Home').fadeIn(10000);
 });

@@ -42,11 +42,13 @@
 	font-size:45px;
 }
 #explore{
-	margin: 0;
+	margin: auto;
+	width:65%;
+	padding-left: 0px;
+	padding-right: 0px;
 	font-size: 50%;
 	border: 2px solid white;
 	color: white;
-	padding: 10px;
 	cursor: pointer;
 }
 #Contact{
@@ -79,6 +81,7 @@
   padding-bottom: 5px;
   font-size: 50px;
 }
+/* Leave for page opener, use javascript to change it */
 #Home{
 	display:none;
 }
