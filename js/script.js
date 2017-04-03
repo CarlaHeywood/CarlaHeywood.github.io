@@ -45,12 +45,22 @@ function openNav(x) {
 }
 /* Set the width of the side navigation to 0 */
 function closeNav(x) {
-		changeMenu(x);
-   document.getElementById("mySidenav").style.height = "0px";
+	changeMenu(x);
+  document.getElementById("mySidenav").style.height = "0px";
 }
 //-----------------
+function goToHomePage() {
+	//animateMenu(getElementById('burgermenu'));
+	window.location.pathname = "../index.html";
+	smoothScroll();
+}
 // Smooth Scrolling
-$(document).ready(function () {
+$(document).ready( function() {
+	$("#Contact-projects").click(function(e){
+		goToHomePage();
+	});
+});
+function smoothScroll() {
   // Add smooth scrolling to all links
     "use strict";
     $("a").on('click', function (event) {
@@ -74,8 +84,6 @@ $(document).ready(function () {
             });
         } // End if
     });
-
-
-		// Page Opener
-		//$('#Home').fadeIn(10000);
-});
+}
+// Page Opener
+//$('#Home').fadeIn(10000);
