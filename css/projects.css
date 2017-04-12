@@ -18,10 +18,10 @@
   width: 95%;
 }
 .cell{
-  cursor: pointer;
   padding: 10%;
   height: auto;
   margin-bottom: 25px;
+  background-color: #bdc3c7;
 }
 .subject{
   text-align: center;
@@ -30,5 +30,4 @@
 #guardians, #nerdup, #mygraphics, #mycode, #fontcloud, #somi{
   font-size: 25px;
   cursor:pointer;
-  background-color: #bdc3c7;
 }
