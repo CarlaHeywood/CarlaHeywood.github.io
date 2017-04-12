@@ -26,6 +26,9 @@
 #parent2, #child2{
 	height: auto;
 }
+.cell{
+	cursor: pointer;
+}
 #triangle{
 	margin:auto;
 	background-image: url("/pics/BlueTriangle.png");
