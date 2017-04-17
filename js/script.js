@@ -41,7 +41,6 @@ function changeMenu(x){
 function openNav(x) {
 		changeMenu(x);
    document.getElementById("mySidenav").style.height = "5%";
-	 document.getElementById("Page-Content").style.opacity = "0.5";
 }
 /* Set the width of the side navigation to 0 */
 function closeNav(x) {
