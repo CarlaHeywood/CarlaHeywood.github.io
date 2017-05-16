@@ -48,6 +48,13 @@ a{
   border: 2px solid white;
   padding: 1%;
 }
+.contactLink:hover{
+  background-color: white;
+}
+#contactLinkId:hover{
+  color:black;
+  background: white;
+}
 @media only screen and (max-width: 1080px) {
   .bar{
     background-color: black;
