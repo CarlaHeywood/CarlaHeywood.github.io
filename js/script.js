@@ -7,10 +7,8 @@ $(window).scroll(function () {
 
 	// How far I have scrolled
 	var wScroll = $(this).scrollTop();
-
 	$('#name').css({
 		'transform' : 'translate(0px ,  ' + wScroll / 8 + '%)'
-
 	});
 });
 // Burger menu animated
@@ -19,7 +17,7 @@ function animateMenu(x) {
 		if ($(window).width()>1080){
 			return;
 		}
-		if (document.getElementById("mySidenav").style.height == "5%") {
+		if (document.getElementById("mySidenav").style.width == "100%") {
 			closeNav(x);
 		}
 		else{
@@ -27,7 +25,7 @@ function animateMenu(x) {
 		}
 }
 function fromContent(x){
-	if(document.getElementById("mySidenav").style.height == "5%"){
+	if(document.getElementById("mySidenav").style.width == "100%"){
 		animateMenu(x);
 	}
 	else {
@@ -40,13 +38,12 @@ function changeMenu(x){
 // Side menu for Mobile
 function openNav(x) {
 		changeMenu(x);
-   document.getElementById("mySidenav").style.height = "5%";
-	 document.getElementById("Page-Content").style.opacity = "0.5";
+   document.getElementById("mySidenav").style.width = "100%";
 }
 /* Set the width of the side navigation to 0 */
 function closeNav(x) {
 	changeMenu(x);
-  document.getElementById("mySidenav").style.height = "0px";
+  document.getElementById("mySidenav").style.width = "0%";
 }
 //-----------------
 function goToHomePage() {

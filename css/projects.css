@@ -1,6 +1,6 @@
 *{
     font-family: 'Anton', sans-serif;
-    color: white;
+    color: black;
 }
 #projectsParent{
   margin: auto;
@@ -15,19 +15,46 @@
   margin: auto;
   top: 14%;
   height:100%;
-  width: 95%;
+  width: 100%;
 }
 .cell{
-  padding: 10%;
+  padding: 15%;
   height: auto;
-  margin-bottom: 25px;
 }
 .subject{
-  text-align: center;
+
   font-size: 50px;
 }
 #guardians, #nerdup, #mygraphics, #mycode{
   font-size: 25px;
   cursor:pointer;
-  background-color: #bdc3c7;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#mygraphics{
+  background-image: url("/pics/instagramMock.png");
+  background-position: left;
+  background-color: #9bbfb1;
+  text-align: right;
+}
+#mycode{
+  background-image: url("/pics/githubMock.png");
+  background-position: right;
+  background-color: #eac5dd;
+  text-align: left;
+}
+#nerdup{
+  background-image: url("/pics/nerdupMock");
+  background-position: bottom;
+  background-color: #d0dee2;
+  text-align: left;
+  color: black;
+}
+#nerdupHead{
+  color: black;
+}
+#guardians{
+  background-color: #d2b3ef;
+  background-image: url("/pics/guardiansLogo.png");
+  background-position: bottom;
 }

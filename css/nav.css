@@ -43,22 +43,37 @@ a{
   background-size: contain;
   background-repeat: no-repeat;
 }
-.contactLink{
-  align-items: center;
+button{
+  color: white;
+  font-size: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: black;
   border: 2px solid white;
-  padding: 1%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  outline: none;
+}
+button:hover{
+  color: black;
+  background-color: white;
+}
+.contactHover:hover{
+  color:black;
 }
 @media only screen and (max-width: 1080px) {
   .bar{
+    margin: auto;
     background-color: black;
     text-align: center;
     height:	14%;
     width: 100%;
     position: fixed;
     z-index: 100;
-    font-size: 30px;
+    font-size: 60px;
   }
   .logo{
+    z-index: 100;
     cursor: pointer;
     margin: auto;
     position: fixed;
@@ -92,44 +107,47 @@ a{
     transition: .5s;
 	}
 	#mySidenav{
-		margin: 0;
-		height: 0;
-		width: 100%;
+		height: 100%;
+		width: 0;
+    top: 0;
 		position: fixed;
-		z-index: 100;
-		top: 14%;
-		background-color: #AAE0F6;
-		overflow-x: hidden;
-		padding:0;
+		background-color: black;
+	  overflow: hidden;
+		padding: 0;
+    opacity: .95;
 		transition: .5s;
 	}
   a{
-		z-index: 100;
 		text-decoration: none;
 		font-size: 100%;
-		transition: .5s;
-    color: black;
+    color: #AAE0F6;
 	}
   li{
-    padding-top: 2%;
+    z-index: 100;
+    top: 10%;
+    padding-top: 15%;
 		list-style: none;
 		text-align: center;
+    width: 100%;
 	}
-  .contactLink{
+  button{
     border: none;
+    color: white;
+    background-color: inherit;
   }
     /* Menu button animation */
-    .change .line1{
-      height: 0;
+  .change .line1{
+      background-color: #AAE0F6;
+      -webkit-transform: rotate(-45deg) translate(-12px,6px);
+      transform:rotate(-45deg) translate(-12px,6px);
+  }
+  .change .line2{
       opacity: 0;
-    }
-    .change .line2{
-      height: 0;
-      opacity: 0;
-    }
-    .change .line3{
-      height: 0;
-      opacity: 0;
-    }
+  }
+  .change .line3{
+      background-color: #AAE0F6;
+      -webkit-transform: rotate(45deg) translate(-14px,-10px);
+      transform:rotate(45deg) translate(-14px,-10px);
+  }
     /*---------------*/
 }
