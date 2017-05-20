@@ -6,13 +6,6 @@
 		<title> Carla Heywood</title>
 		<!-- Tab Icon -->
 		<link rel="shortcut icon" type="image/x-icon" href="/pics/BlueTriangleIcon.png" />
-		<!-- Refrencing -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		<!-- File MUST appear after -->
-		<script src="js/script.js"></script>
-
 		<!-- StyleSheet -->
 		<link rel="stylesheet" type="text/css" href="css/main.css"/>
 		<link rel="stylesheet" type="text/css" href="css/page.css"/>
@@ -69,7 +62,7 @@
 							<div id="abouttext">I am currently working toward my bachelor's degree in Mathematics and
 								Computer Science at UC San Diego. I am looking to gain experience in my field and to
 								expand my creativity. My interests include web development, mobile application
-								development, graphic design, and art. In the time I have spent in school,
+								development, and graphic design. In the time I have spent in school,
 								I have learned various programming languages. I spend most of my spare
 								time teaching myself about new technologies and tools online.
 								I am eager to branch out and apply what I have learned to real life
@@ -107,6 +100,25 @@
 					</div>
 				</div>
   	</div>
+		<!-- Refrencing -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<!-- File MUST appear after -->
+		<script src="js/script.js"></script>
+		<script>$('#explore').click(function(){
+			ga("send","event","Projects","click");
+		})</script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-97422596-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
 	</body>
 
 </html>

@@ -61,6 +61,13 @@ button:hover{
 .contactHover:hover{
   color:black;
 }
+.contactLink:hover{
+  background-color: white;
+}
+#contactLinkId:hover{
+  color:black;
+  background: white;
+}
 @media only screen and (max-width: 1080px) {
   .bar{
     margin: auto;
