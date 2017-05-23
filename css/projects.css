@@ -1,12 +1,10 @@
 *{
     font-family: 'Anton', sans-serif;
-    color: black;
+    color: white;
 }
 #projectsParent{
   margin: auto;
-  font-size: 0;
   overflow-y: scroll;
-  background-color: black;
   display: flex;
 }
 #work{
@@ -14,7 +12,7 @@
   position: relative;
   margin: auto;
   top: 14%;
-  height:100%;
+  height: auto;
   width: 100%;
 }
 .cell{
@@ -22,12 +20,11 @@
   height: auto;
 }
 .subject{
-
   font-size: 50px;
 }
-#guardians, #nerdup, #mygraphics, #mycode, #fontcloud, #somi{
+#guardians, #nerdup, #mygraphics, #mycode, #fontcloud, #fontcloudlogo, #somi{
   font-size: 25px;
-  cursor:pointer;
+  cursor: pointer;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -56,5 +53,16 @@
 #guardians{
   background-color: #d2b3ef;
   background-image: url("/pics/guardiansLogo.png");
+  background-position: bottom;
+}
+#fontcloud{
+  background-color: #597f82;
+}
+#fontcloudlogo{
+  margin: auto;
+  position: relative;
+  height: 300px;
+  width: auto;
+  background-image: url("/pics/FontCloudLogo.png");
   background-position: bottom;
 }
