@@ -33,10 +33,16 @@
       <ul id="mySidenav" class="menuOptions">
         <li><a href="../index.html" onclick="animateMenu(getElementById('burgermenu'))">Home</a></li>
         <li><a href="../index.html#About" onclick="animateMenu(getElementById('burgermenu'))">About</a></li>
-         <li class="contactLink"><button onclick="animateMenu(getElementById('burgermenu'))"><a class="contactHover" href="#Contact">Contact</a></button></li>
+         <li class="contactLink"><a class="contactHover" onclick="animateMenu(getElementById('burgermenu'))" href="../index.html#Contact">Contact</a></li>
       </ul>
     </div>
   </header>
+
+	<div class="Loader">
+		<div class="LineWrapper">
+			<div class="LoaderLine"></div>
+		</div>
+	</div>
   <div class= "Page-Content" onclick="fromContent(getElementById('burgermenu'))">
 		<div class="page" id="projects">
 			<div class="parent" id="projectsParent">

@@ -15,28 +15,31 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
 	</head>
 	<body>
-			<!-- Nav Bar -->
-
-
-		<header>
-			<div class="bar" id="bar">
-				<div class="burgermenu" id="burgermenu" onclick="animateMenu(this)">
-					<div class="line1"></div>
-					<div class="line2"></div>
-					<div class="line3"></div>
+				<!-- Nav Bar -->
+				<header>
+					<div class="bar" id="bar">
+						<div class="burgermenu" id="burgermenu" onclick="animateMenu(this)">
+							<div class="line1"></div>
+							<div class="line2"></div>
+							<div class="line3"></div>
+						</div>
+						<a href="/">
+							<div class="logo" onclick="animateMenu(getElementById('burgermenu'))"></div>
+						</a>
+					  <ul id="mySidenav" class="menuOptions">
+					    <li><a href="/" onclick="animateMenu(getElementById('burgermenu'))">Home</a></li>
+							<li><a href="#Projects" onclick="animateMenu(getElementById('burgermenu'))">Projects</a></li>
+					    <li><a href="#About" onclick="animateMenu(getElementById('burgermenu'))">About</a></li>
+					    <li class="contactLink"><a class="contactHover" onclick="animateMenu(getElementById('burgermenu'))" href="#Contact">Contact</a></li>
+			      </ul>
+			    </div>
+				</header>
+				<div class="Loader">
+					<div class="LineWrapper">
+						<div class="LoaderLine"></div>
+					</div>
 				</div>
-				<a href="/">
-					<div class="logo" onclick="animateMenu(getElementById('burgermenu'))"></div>
-				</a>
-			  <ul id="mySidenav" class="menuOptions">
-			    <li><a href="/" onclick="animateMenu(getElementById('burgermenu'))">Home</a></li>
-					<li><a href="#Projects" onclick="animateMenu(getElementById('burgermenu'))">Projects</a></li>
-			    <li><a href="#About" onclick="animateMenu(getElementById('burgermenu'))">About</a></li>
-			    <li class="contactLink"><button onclick="animateMenu(getElementById('burgermenu'))"><a class="contactHover" href="#Contact">Contact</a></button></li>
-	      </ul>
-	    </div>
-		</header>
-    <div class= "Page-Content" onclick="fromContent(getElementById('burgermenu'))">
+				 <div class= "Page-Content" onclick="fromContent(getElementById('burgermenu'))">
 				<!-- Home 1-->
 				<div class="page" id="Home">
 					<div class="parent" id="parent1">

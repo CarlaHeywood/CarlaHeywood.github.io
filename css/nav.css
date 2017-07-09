@@ -1,4 +1,5 @@
 .bar{
+    opacity: 0;
     display: inline-block;
 		text-align: right;
     margin: 0;
@@ -43,7 +44,7 @@ a{
   background-size: contain;
   background-repeat: no-repeat;
 }
-button{
+.contactHover{
   color: white;
   font-size: 100%;
   cursor: pointer;
@@ -54,15 +55,9 @@ button{
   padding-bottom: 10px;
   outline: none;
 }
-button:hover{
-  color: black;
-  background-color: white;
-}
 .contactHover:hover{
-  color:black;
-}
-.contactLink:hover{
   background-color: white;
+  color:black;
 }
 #contactLinkId:hover{
   color:black;
@@ -132,15 +127,21 @@ button:hover{
   li{
     z-index: 100;
     top: 10%;
-    padding-top: 15%;
+    padding-top: 150px;
 		list-style: none;
 		text-align: center;
     width: 100%;
 	}
-  button{
+  .menuOptions{
+    margin-top: 50px;
+  }
+  .contactHover{
     border: none;
-    color: white;
-    background-color: inherit;
+    color: #AAE0F6;
+  }
+  .contactHover:hover{
+    background-color: black;
+    color: #AAE0F6;
   }
     /* Menu button animation */
   .change .line1{

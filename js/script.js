@@ -1,6 +1,26 @@
 /*jslint browser: true, devel: true*/
 /*global $, jQuery, alert*/
 
+// Loader
+$(window).load(function(){
+	$(".Loader").animate({
+		opacity: 0
+	}, 3000);
+	setTimeout(function() {
+		$(".Loader").css('display', 'none');
+	}, 3000);
+	setTimeout(function() {
+		$(".Page-Content").css('display', 'block');
+	}, 3000);
+	$(".bar").animate({
+		opacity: 1
+	}, 3000);
+	$(".Page-Content").animate({
+		opacity: 1
+	}, 5000);
+});
+//-----------------------------
+
 // Parallax
 $(window).scroll(function () {
 	"use strict";
