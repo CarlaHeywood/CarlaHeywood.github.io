@@ -114,7 +114,7 @@ a{
     top: 0;
 		position: fixed;
 		background-color: black;
-	  overflow: hidden;
+	  overflow-y:auto;
 		padding: 0;
     opacity: .95;
 		transition: .5s;
