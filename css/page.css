@@ -102,6 +102,16 @@
 #Home{
 	display:none;
 }
+.ResumeLink{
+	text-align: center;
+	margin: auto;
+	width: 65%;
+	color: white;
+	border: 2px solid white;
+	cursor: pointer;
+	padding-left: 0;
+	padding-right: 0;
+}
 @media only screen and (max-width: 1080px) {
 	#Home{
 		display:none;
