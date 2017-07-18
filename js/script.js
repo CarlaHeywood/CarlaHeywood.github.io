@@ -13,11 +13,12 @@ $(window).load(function(){
 		$(".Page-Content").css('display', 'block');
 	}, 3000);
 	$(".bar").animate({
+		top: 0,
 		opacity: 1
-	}, 3000);
+	}, 2500);
 	$(".Page-Content").animate({
 		opacity: 1
-	}, 5000);
+	}, 4500);
 });
 //-----------------------------
 
