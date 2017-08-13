@@ -6,10 +6,22 @@ html,body,.Page-Content{
 *{
     font-family: 'Quicksand', sans-serif;
 }
+.footer{
+	margin: 0;
+	position: absolute;
+	font-family:"Quicksand", sans-serif;
+	text-align: center;
+	width: 100%;
+	font-size: 20px;
+	z-index: 1;
+	background-color: grey;
+	bottom: 0;
+}
 h1{
     font-weight: normal;
 }
 .Page-Content{
+	position: relative;
 	opacity: 0;
 	display: none;
 }

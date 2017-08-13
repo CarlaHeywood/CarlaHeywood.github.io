@@ -1,68 +1,104 @@
 *{
-    font-family: 'Anton', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
     color: white;
+}
+html{
+  overflow: hidden;
+}
+.Page-Content{
+  position: relative;
+  top:11%;
+}
+#work{
+  position: relative;
+  height: 100%;
+}
+.aProject{
+  margin: auto;
+  position: relative;
+  padding: 10%;
+  top: 11%;
+}
+.cell{
+  margin: auto;
+  position: relative;
+  width: 100%;
+  height: 89%;
+  columns: 2;
+}
+.viewLink{
+  margin: auto;
+  padding:1%;
+  border: 1px white solid;
+  break-after: column;
+  text-align: center;
+  width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.mockPics{
+  position: relative;
+  margin: auto;
+  display: block;
+  height: 250px;
+  padding-bottom: 5%;
+}
+.subject{
+  margin: auto;
+  position: relative;
+  font-size: 50px;
+}
+.projectD{
+  margin: auto;
+  display: block;
+  color: white;
+}
+.description{
+  font-weight: 300;
+  font-size: 20px;
+}
+.tools{
+  font-weight: 300;
+  font-size: 20px;
+}
+.toolsHead{
+  padding-right: 10px;
 }
 #projectsParent{
   margin: auto;
   overflow-y: scroll;
   display: flex;
 }
-#work{
-  display: inline-block;
-  position: relative;
-  margin: auto;
-  top: 14%;
-  height: auto;
-  width: 100%;
-}
-.cell{
-  padding: 15%;
-  height: auto;
-}
-.subject{
-  font-size: 50px;
-}
-#guardians, #nerdup, #mygraphics, #mycode, #fontcloud, #fontcloudlogo, #somi{
-  font-size: 25px;
-  cursor: pointer;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-#mygraphics{
-  background-image: url("/pics/instagramMock.png");
-  background-position: left;
-  background-color: #9bbfb1;
-  text-align: right;
-}
-#mycode{
-  background-image: url("/pics/githubMock.png");
-  background-position: right;
-  background-color: #eac5dd;
-  text-align: left;
-}
-#nerdup{
-  background-image: url("/pics/nerdupMock");
-  background-position: bottom;
-  background-color: #d0dee2;
-  text-align: left;
-  color: black;
-}
-#nerdupHead{
-  color: black;
-}
-#guardians{
-  background-color: #d2b3ef;
-  background-image: url("/pics/guardiansLogo.png");
-  background-position: bottom;
-}
-#fontcloud{
-  background-color: #597f82;
-}
-#fontcloudlogo{
-  margin: auto;
-  position: relative;
-  height: 300px;
-  width: auto;
-  background-image: url("/pics/FontCloudLogo.png");
-  background-position: bottom;
+@media only screen and (max-width: 1080px) {
+  .Page-Content{
+    position: relative;
+    top:14%;
+  }
+  #work{
+    margin: auto;
+    top: 14%;
+    height: 100%;
+  }
+  .viewLink{
+    color: white;
+    font-size: 30px;
+    width: 30%;
+  }
+  .aProject{
+    top: 14%;
+  }
+  .cell{
+    columns: 1;
+  }
+  .subject{
+    padding-top: 5%;
+    text-align: center;
+  }
+  .description{
+    text-align: justify;
+  }
+  .mockPics{
+    height:450px;
+  }
 }

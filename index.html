@@ -10,6 +10,7 @@
 		<link rel="stylesheet" type="text/css" href="css/main.css"/>
 		<link rel="stylesheet" type="text/css" href="css/page.css"/>
 		<link rel="stylesheet" type="text/css" href="css/nav.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 		<!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
@@ -27,10 +28,10 @@
 							<div class="logo" onclick="animateMenu(getElementById('burgermenu'))"></div>
 						</a>
 					  <ul id="mySidenav" class="menuOptions">
-					    <li><a href="/" onclick="animateMenu(getElementById('burgermenu'))">Home</a></li>
-							<li><a href="#Projects" onclick="animateMenu(getElementById('burgermenu'))">Projects</a></li>
-					    <li><a href="#About" onclick="animateMenu(getElementById('burgermenu'))">About</a></li>
-					    <li class="contactLink"><a class="contactHover" onclick="animateMenu(getElementById('burgermenu'))" href="#Contact">Contact</a></li>
+					    <li><a href="/" onclick="smoothScroll();animateMenu(getElementById('burgermenu'))">Home</a></li>
+							<li><a href="#Projects" onclick="smoothScroll();animateMenu(getElementById('burgermenu'))">Projects</a></li>
+					    <li><a href="#About" onclick="smoothScroll();animateMenu(getElementById('burgermenu'))">About</a></li>
+					    <li class="contactLink"><a class="contactHover" onclick="smoothScroll();animateMenu(getElementById('burgermenu'))" href="#Contact">Contact</a></li>
 			      </ul>
 			    </div>
 				</header>
@@ -73,7 +74,7 @@
 								<p>It is easy to become a product of society,
 								unthinking, or to simply "go through the motions". However,
 								I make it a goal to challenge myself, every day. As I journey
-								through adulthood, I find ways to explore my passions and
+								through life, I find ways to explore my passions and
 								creativity. I submit to my curiosity and find ways to learn
 								something new. <br>
 								My ultimate goal is to create something with great impact; to
@@ -81,7 +82,7 @@
 								to even just a small community. <br>
 								The greatest, most innovative creations are products of
 								collaboration. I encourage you to get in contact with me if
-								such collaboration is what you seek.</p>
+								such collaboration is also what you seek.</p>
 								<a class="ResumeLink" href="/pages/Resume/Resume.html">Resume</a>
 								<br><br>
 						</div>
@@ -102,20 +103,18 @@
 								</p>
 							</div>
 							<div id="icons">
-								<a href="https://www.facebook.com/carla.heywood.7">
-									<div class="facebook"></div>
-								</a>
-								<a href="https://www.linkedin.com/in/carlaheywood">
-									<div class="linkedin"></div>
-								</a>
-                <a href="https://github.com/CarlaHeywood">
-									<div class="github"></div>
-								</a>
+								<a class="fa fa-facebook" href="https://www.facebook.com/carla.heywood.7"></a>
+								<a class="fa fa-linkedin" href="https://www.linkedin.com/in/carlaheywood"></a>
+								<a class="fa fa-instagram" href="https://www.instagram.com/carlaheywood/"></a>
+								<a class="fa fa-snapchat" href="snapchat"></a>
+								<a class="fa fa-twitter" href="https://twitter.com/CarlaN24"></a>
+                <a class="fa fa-github" href="https://github.com/CarlaHeywood"></a>
 							</div>
 						</div>
 					</div>
 				</div>
   	</div>
+	</div>
 		<!-- Refrencing -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -133,8 +132,6 @@
 
 		  ga('create', 'UA-97422596-1', 'auto');
 		  ga('send', 'pageview');
-
 		</script>
 	</body>
-
 </html>

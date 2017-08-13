@@ -1,6 +1,26 @@
 /*jslint browser: true, devel: true*/
 /*global $, jQuery, alert*/
 
+// Projects List
+// Loading data from Google Sheet using JSON link
+// Creating html for the handlebars template
+var requestProjects = new XMLHttpRequest();
+requestProjects.open('GET', 'https://script.google.com/macros/s/AKfycbygukdW3tt8sCPcFDlkMnMuNu9bH5fpt7bKV50p2bM/exec?id=1-tcWjpx1W0v5nOmj_VGN2ng0PUyJeLPlA3V4z9rOWVg&sheet=Projects');
+requestProjects.onload = function(){
+    var data = JSON.parse(requestProjects.responseText);
+    createProjectList(data);
+};
+requestProjects.onerror = function() {
+  console.log("Connection error..");
+};
+requestProjects.send();
+function createProjectList(projectData){
+  var rawTemplate = document.getElementById("projectTemplate").innerHTML;
+  var compiledTemplate = Handlebars.compile(rawTemplate);
+  var generatedHTML = compiledTemplate(projectData);
+  var project_list = document.getElementById("projectList");
+  project_list.innerHTML = generatedHTML;
+}
 // Loader
 $(window).load(function(){
 	$(".Loader").animate({
@@ -21,17 +41,13 @@ $(window).load(function(){
 	}, 4500);
 });
 //-----------------------------
+var projects = $('.cell div');
 
-// Parallax
-$(window).scroll(function () {
-	"use strict";
+//$(window).scroll(function (event) {
+//    var scroll = $(window).scrollTop();
+//    console.log(scroll);
+//});
 
-	// How far I have scrolled
-	var wScroll = $(this).scrollTop();
-	$('#name').css({
-		'transform' : 'translate(0px ,  ' + wScroll / 8 + '%)'
-	});
-});
 // Burger menu animated
 function animateMenu(x) {
    "use strict";
@@ -61,47 +77,32 @@ function openNav(x) {
 		changeMenu(x);
    document.getElementById("mySidenav").style.width = "100%";
 }
-/* Set the width of the side navigation to 0 */
 function closeNav(x) {
 	changeMenu(x);
   document.getElementById("mySidenav").style.width = "0%";
 }
 //-----------------
-function goToHomePage() {
-	//animateMenu(getElementById('burgermenu'));
-	window.location.pathname = "../index.html";
-	smoothScroll();
-}
-// Smooth Scrolling
-$(document).ready( function() {
-	$("#Contact-projects").click(function(e){
-		goToHomePage();
-	});
-});
+
+/* Smooth Scrolling
 function smoothScroll() {
-  // Add smooth scrolling to all links
-    "use strict";
+		console.log("smooth");
     $("a").on('click', function (event) {
-
-    // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
-      // Prevent default anchor click behavior
             event.preventDefault();
-
-      // Store hash
             var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
+						$('html, body').animate({
                 scrollTop: $(hash).offset().top
-            }, 800, function () {
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
+            }, 500, function () {
+							window.location.hash = hash;
             });
         } // End if
     });
 }
+function fromProjects() {
+	console.log("fromProjects");
+	window.location = "index.html";
+}*/
+
 // Page Opener
 //$('#Home').fadeIn(10000);
