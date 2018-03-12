@@ -19,7 +19,7 @@ function createProjectList(projectData){
   var compiledTemplate = Handlebars.compile(rawTemplate);
   var generatedHTML = compiledTemplate(projectData);
   var project_list = document.getElementById("projectList");
-  project_list.innerHTML = generatedHTML;
+  project_list.innerHTML() = generatedHTML;
 }
 // Loader
 $(window).load(function(){
