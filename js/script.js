@@ -15,6 +15,7 @@ requestProjects.onerror = function() {
 };
 requestProjects.send();
 function createProjectList(projectData){
+  console.log("Madeit");
   var rawTemplate = document.getElementById("projectTemplate").innerHTML;
   var compiledTemplate = Handlebars.compile(rawTemplate);
   var generatedHTML = compiledTemplate(projectData);
