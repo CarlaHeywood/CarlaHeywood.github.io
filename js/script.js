@@ -15,7 +15,7 @@ requestProjects.onerror = function() {
 };
 requestProjects.send();
 function createProjectList(projectData){
-  var rawTemplate = document.getElementById("projectTemplate").innerHTML;
+  var rawTemplate = document.getElementById("projectTemplate").innerHTML();
   var compiledTemplate = Handlebars.compile(rawTemplate);
   var generatedHTML = compiledTemplate(projectData);
   var project_list = document.getElementById("projectList");
