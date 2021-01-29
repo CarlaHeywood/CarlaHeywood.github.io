@@ -24,6 +24,7 @@
 	}
 // Loader
   $(window).load(function(){
+	console.log ("window is loaded");
 	$(".Loader").animate({
   		opacity: 0
   	}, 3000);
