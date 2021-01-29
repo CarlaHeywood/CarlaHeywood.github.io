@@ -4,24 +4,24 @@
 // Projects List
 // Loading data from Google Sheet using JSON link
 // Creating html for the handlebars template
-// 	var requestProjects = new XMLHttpRequest();
-// 	requestProjects.open('GET', 'https://spreadsheets.google.com/feeds/cells/1-tcWjpx1W0v5nOmj_VGN2ng0PUyJeLPlA3V4z9rOWVg/1/public/full?alt=json', true);
-// 	requestProjects.onload = function(){
-// 	    var data = JSON.parse(requestProjects.responseText);
-// 	    createProjectList(data);
-// 	};
-// 	requestProjects.onerror = function() {
-// 	  console.log("Connection error..");
-// 	};
-// 	requestProjects.send();
-// 	function createProjectList(projectData){
-// 	  console.log("Madeit");
-// 	  var rawTemplate = document.getElementById("projectTemplate").innerHTML;
-// 	  var compiledTemplate = Handlebars.compile(rawTemplate);
-// 	  var generatedHTML = compiledTemplate(projectData);
-// 	  var project_list = document.getElementById("projectList");
-// 	  project_list.innerHTML = generatedHTML;
-// 	}
+	var requestProjects = new XMLHttpRequest();
+	requestProjects.open('GET', 'https://spreadsheets.google.com/feeds/cells/1-tcWjpx1W0v5nOmj_VGN2ng0PUyJeLPlA3V4z9rOWVg/1/public/full?alt=json', true);
+	requestProjects.onload = function(){
+	    var data = JSON.parse(requestProjects.responseText);
+	    createProjectList(data);
+	};
+ 	requestProjects.onerror = function() {
+ 	    console.log("Connection error..");
+	};
+ 	requestProjects.send();
+ 	function createProjectList(projectData){
+ 	  console.log("Madeit");
+	  var rawTemplate = document.getElementById("projectTemplate").innerHTML;
+	  var compiledTemplate = Handlebars.compile(rawTemplate);
+ 	  var generatedHTML = compiledTemplate(projectData);
+	  var project_list = document.getElementById("projectList");
+	  project_list.innerHTML = generatedHTML;
+	}
 // Loader
 //  $(window).load(function(){
 // 	$(".Loader").animate({
