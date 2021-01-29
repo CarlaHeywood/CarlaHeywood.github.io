@@ -23,24 +23,24 @@
 	  project_list.innerHTML = generatedHTML;
 	}
 // Loader
-//  $(window).load(function(){
-// 	$(".Loader").animate({
-//  		opacity: 0
-//  	}, 3000);
-//  	setTimeout(function() {
-//  		$(".Loader").css('display', 'none');
-// 	}, 3000);
-// 	setTimeout(function() {
-// 		$(".Page-Content").css('display', 'block');
-// 	}, 3000);
-// 	$(".bar").animate({
-// 		top: 0,
-// 		opacity: 1
-// 	}, 2500);
-// 	$(".Page-Content").animate({
-// 		opacity: 1
-// 	}, 4500);
-// });
+  $(window).load(function(){
+	$(".Loader").animate({
+  		opacity: 0
+  	}, 3000);
+  	setTimeout(function() {
+ 		$(".Loader").css('display', 'none');
+	}, 3000);
+	setTimeout(function() {
+ 		$(".Page-Content").css('display', 'block');
+ 	}, 3000);
+ 	$(".bar").animate({
+		top: 0,
+		opacity: 1
+	}, 2500);
+ 	$(".Page-Content").animate({
+		opacity: 1
+ 	}, 4500);
+    });
 //-----------------------------
 var projects = $('.cell div');
 
