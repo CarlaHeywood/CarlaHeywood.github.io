@@ -4,31 +4,31 @@
 // Projects List
 // Loading data from Google Sheet using JSON link
 // Creating html for the handlebars template
-var requestProjects = new XMLHttpRequest();
-requestProjects.open('GET', 'https://script.google.com/macros/s/AKfycbygukdW3tt8sCPcFDlkMnMuNu9bH5fpt7bKV50p2bM/exec?id=1-tcWjpx1W0v5nOmj_VGN2ng0PUyJeLPlA3V4z9rOWVg&sheet=Projects', true);
-requestProjects.onload = function(){
-    var data = JSON.parse(requestProjects.responseText);
-    createProjectList(data);
-};
-requestProjects.onerror = function() {
-  console.log("Connection error..");
-};
-requestProjects.send();
-function createProjectList(projectData){
-  console.log("Madeit");
-  var rawTemplate = document.getElementById("projectTemplate").innerHTML;
-  var compiledTemplate = Handlebars.compile(rawTemplate);
-  var generatedHTML = compiledTemplate(projectData);
-  var project_list = document.getElementById("projectList");
-  project_list.innerHTML = generatedHTML;
-}
+// 	var requestProjects = new XMLHttpRequest();
+// 	requestProjects.open('GET', 'https://script.google.com/macros/s/AKfycbygukdW3tt8sCPcFDlkMnMuNu9bH5fpt7bKV50p2bM/exec?id=1-tcWjpx1W0v5nOmj_VGN2ng0PUyJeLPlA3V4z9rOWVg&sheet=Projects', true);
+// 	requestProjects.onload = function(){
+// 	    var data = JSON.parse(requestProjects.responseText);
+// 	    createProjectList(data);
+// 	};
+// 	requestProjects.onerror = function() {
+// 	  console.log("Connection error..");
+// 	};
+// 	requestProjects.send();
+// 	function createProjectList(projectData){
+// 	  console.log("Madeit");
+// 	  var rawTemplate = document.getElementById("projectTemplate").innerHTML;
+// 	  var compiledTemplate = Handlebars.compile(rawTemplate);
+// 	  var generatedHTML = compiledTemplate(projectData);
+// 	  var project_list = document.getElementById("projectList");
+// 	  project_list.innerHTML = generatedHTML;
+// 	}
 // Loader
-// $(window).load(function(){
+//  $(window).load(function(){
 // 	$(".Loader").animate({
-// 		opacity: 0
-// 	}, 3000);
-// 	setTimeout(function() {
-// 		$(".Loader").css('display', 'none');
+//  		opacity: 0
+//  	}, 3000);
+//  	setTimeout(function() {
+//  		$(".Loader").css('display', 'none');
 // 	}, 3000);
 // 	setTimeout(function() {
 // 		$(".Page-Content").css('display', 'block');
