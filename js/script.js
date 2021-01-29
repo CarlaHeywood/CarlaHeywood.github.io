@@ -106,4 +106,4 @@ function fromProjects() {
 }*/
 
 // Page Opener
-//$('#Home').fadeIn(10000);
+$('#Home').fadeIn(10000);
