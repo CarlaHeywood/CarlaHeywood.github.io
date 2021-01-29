@@ -33,36 +33,36 @@ h1{
 	height: 100px;
 	width: 100px;
 	top: 50%;
-  transform: translateY(-50%);
+     	transform: translateY(-50%);
 	background-image: url('/pics/Loader.png');
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
 }
 .Loader:after {
-  content: "";
-  display: block;
-  padding-bottom: 100%;
+  	content: "";
+  	display: block;
+  	padding-bottom: 100%;
 }
 .LineWrapper{
 	margin: 0 auto;
 	position: relative;
 	width: 80px;
-  top: 62%;
+  	top: 62%;
 }
 .LoaderLine{
 	width: 100%;
 }
 	.LoaderLine:before{
 		content: "";
-    width: 0;
-    height: 7px;
-    background: #AAE0F6;
-    position: absolute;
-    left: 0;
-    right: auto;
-    animation: loader 2s infinite;
-    animation-fill-mode: both;
+    	width: 0;
+   	 height: 7px;
+   	 background: #AAE0F6;
+   	 position: absolute;
+   	 left: 0;
+  	 right: auto;
+  	 animation: loader 2s;
+    	 animation-fill-mode: both;
 	}
 @keyframes loader {
     0% {
