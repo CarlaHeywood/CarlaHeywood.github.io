@@ -5,7 +5,7 @@
 // Loading data from Google Sheet using JSON link
 // Creating html for the handlebars template
 // 	var requestProjects = new XMLHttpRequest();
-// 	requestProjects.open('GET', 'https://script.google.com/macros/s/AKfycbygukdW3tt8sCPcFDlkMnMuNu9bH5fpt7bKV50p2bM/exec?id=1-tcWjpx1W0v5nOmj_VGN2ng0PUyJeLPlA3V4z9rOWVg&sheet=Projects', true);
+// 	requestProjects.open('GET', 'https://spreadsheets.google.com/feeds/cells/1-tcWjpx1W0v5nOmj_VGN2ng0PUyJeLPlA3V4z9rOWVg/1/public/full?alt=json', true);
 // 	requestProjects.onload = function(){
 // 	    var data = JSON.parse(requestProjects.responseText);
 // 	    createProjectList(data);
