@@ -16,11 +16,11 @@
  	requestProjects.send();
  	function createProjectList(projectData){
  	  console.log("Madeit");
-// 	  var rawTemplate = document.getElementById("projectTemplate").innerHTML;
-// 	  var compiledTemplate = Handlebars.compile(rawTemplate);
-//  	  var generatedHTML = compiledTemplate(projectData);
-// 	  var project_list = document.getElementById("projectList");
-// 	  project_list.innerHTML = generatedHTML;
+	  var rawTemplate = document.getElementById("projectTemplate").innerHTML;
+	  var compiledTemplate = Handlebars.compile(rawTemplate);
+ 	  var generatedHTML = compiledTemplate(projectData);
+	  var project_list = document.getElementById("projectList");
+	  project_list.innerHTML = generatedHTML;
 	}
 // Loader
   window.onload = function() {
