@@ -23,7 +23,7 @@
 // 	  project_list.innerHTML = generatedHTML;
 	}
 // Loader
-  window.onload = (event) => {
+  window.onload = function() {
 	console.log ("window is loaded");
 	$(".Loader").animate({
   		opacity: 0
@@ -41,7 +41,7 @@
  	$(".Page-Content").animate({
 		opacity: 1
  	}, 4500);
-    }
+    };
 //-----------------------------
 var projects = $('.cell div');
 
